@@ -100,4 +100,7 @@ function divide() {
 }
 
 function equals() {
+  let result = eval(screenDisplay.textContent);
+  
+  screenDisplay.textContent = result;
 }
