@@ -1,5 +1,3 @@
-let currentValue = '';
-let nextValue = '';
 // Define screenDisplay and set text-content to empty string
 let screenDisplay = document.querySelector('#screen-display');
 screenDisplay.textContent = '';
@@ -35,26 +33,71 @@ buttons.forEach((button) => {
 
 function clear() {
   screenDisplay.textContent = '';
-  currentValue = '';
-  nextValue = '';
 }
 
-function add(current, next) {
-  return current + next;
+function add() {
+  if(screenDisplay.textContent == '') {
+    null;
+  }
+  else if (
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '-' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '+' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '*' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '/') {
+    null;
+  }
+  else {
+    screenDisplay.textContent += '+';
+  }
 }
 
-function subtract(current, next) {
-  return current - next;
+function subtract() {
+  if(screenDisplay.textContent == '') {
+    null;
+  }
+  else if (
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '-' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '+' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '*' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '/') {
+    null;
+  }
+  else {
+    screenDisplay.textContent += '-';
+  }
 }
 
-function multiply(current, next) {
-  return current * next;
+function multiply() {
+  if(screenDisplay.textContent == '') {
+    null;
+  }
+  else if (
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '-' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '+' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '*' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '/') {
+    null;
+  }
+  else {
+    screenDisplay.textContent += '*';
+  }
 }
 
-function divide(current, next) {
-  return current / next;
+function divide() {
+  if(screenDisplay.textContent == '') {
+    null;
+  }
+  else if (
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '-' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '+' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '*' ||
+    screenDisplay.textContent[screenDisplay.textContent.length -1] == '/') {
+    null;
+  }
+  else {
+    screenDisplay.textContent += '/';
+  }
 }
 
 function equals() {
-  
 }

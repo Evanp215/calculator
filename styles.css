@@ -23,8 +23,8 @@ body {
 #calc-screen {
   border: 2px solid green;
   border-radius: 5px  ;
-  width: 370px;
-  height: 80px;
+  width: 430px;
+  height: 100px;
   margin-top: 30px; 
   background-color:forestgreen;
   display: flex;
@@ -32,8 +32,9 @@ body {
   align-items: center;
 }
 #screen-display {
-  font-size: 50px;
+  font-size: 30px;
   padding-right: 10px;
+  max-width: 370px;
 }
 #calc-button-container {
   border: 2px solid black;
@@ -54,6 +55,6 @@ body {
   font-size: 20px;
   border-radius: 10px;
 }
-#button-clear {
+#clear {
   background-color: rgb(192, 37, 37);
 }
