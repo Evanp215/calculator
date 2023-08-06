@@ -11,7 +11,7 @@ body {
   font-size: 48px;
 }
 #calc-container {
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 10px;
   width: 500px;
   height: 700px;
