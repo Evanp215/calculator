@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-  let currentDisplay = [];
   let screenDisplay = document.querySelector('#screen-display');
-  screenDisplay.textContent = currentDisplay.join('');
+  screenDisplay.textContent = '';
 
   let buttons = document.querySelectorAll('.calc-button');
   buttons.forEach((button) => {
     button.addEventListener('click', function() {
-      screenDisplay.textContent += `${button.textContent}`
+      if(button.id == 'clear') {
+        screenDisplay.textContent = ''
+      }
+      else {
+        screenDisplay.textContent += `${button.textContent}`
+      }
     });
   });
 });
